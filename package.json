@@ -1,7 +1,7 @@
 {
   "name": "ndex-search-ui",
   "author": "Eric Sage",
-  "version": "v0.0.12",
+  "version": "v0.0.23",
   "description": "A collection of NDEx search interfaces.",
   "license": "MIT",
   "keywords": [],
@@ -48,7 +48,7 @@
     "jest-cli": "^0.8.2",
     "jest-webpack-alias": "^2.0.0",
     "material-ui": "^0.15.0",
-    "ndex-store": "0.0.5",
+    "ndex-store": "0.0.13",
     "node-sass": "^3.4.2",
     "react-bootstrap-table": "^2.3.3",
     "react-redux": "^4.4.0",

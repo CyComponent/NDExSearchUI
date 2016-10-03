@@ -25,6 +25,8 @@ export default class NDExSearch extends React.Component {
   }
 
   componentDidMount() {
+    console.log("Ndex actions")
+    console.log(this.props)
     this.props.ndexActions.search(this.props.defaultQuery)
   }
 
