@@ -1,27 +1,30 @@
 import React from 'react'
 
-import { Tab, Tabs } from 'material-ui/Tabs'
-
 import { PluginView } from 'cy-ui'
 
 export default class Result extends React.Component {
 
   render() {
     const style = {
-      height: "100%",
-      width: "70%",
-      float: "right"
+      width: "30em",
+      flexGrow: 1,
+      display: 'flex',
+      flexDirection: 'column'
     }
+
+    const pluginStyle = {
+      flexGrow: 2,
+    }
+
     var { visualizations, ...pluginProps } = this.props
     return (
-      <div style={style}>
-        <div id="viz">
+        <div id="viz" style={style}>
           <PluginView
             plugins={visualizations}
             {...pluginProps}
+            style={pluginStyle}
           />
         </div>
-      </div>
     )
   }
 

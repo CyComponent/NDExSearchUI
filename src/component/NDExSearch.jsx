@@ -40,9 +40,17 @@ export default class NDExSearch extends React.Component {
       ...pluginProps
     } = this.props
     const muiTheme = getMuiTheme(theme)
+
+    const containerStyle = {
+      display: 'flex',
+      flexDirection: 'row',
+      overflow: 'hidden'
+    }
+
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
         <div style={this.props.style}>
+          <div style={containerStyle}>
             <Search
               filters={filters}
               ndexActions={ndexActions}
@@ -53,6 +61,7 @@ export default class NDExSearch extends React.Component {
               summaries={summaries}
               { ...pluginProps}
             />
+          </div>
         </div>
       </MuiThemeProvider>
     )
